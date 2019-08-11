@@ -6,7 +6,10 @@
   <a-scene embedded arjs='sourceType: webcam;'>
  
     <a-marker preset='hiro'>
-      <a-entity gltf-model src="url('https://raw.githubusercontent.com/ajitem111/rorornoa/master/model/scene.gltf')"></a-entity> 
+      <a-assets>
+        <img id="transpImage" src="http://www.icone-png.com/png/13/13081.png">
+    </a-assets>
+    <a-image width="1" height="1" src="#transpImage"></a-image>
     </a-marker>
 
     <a-entity camera></a-entity>
