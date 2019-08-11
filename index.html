@@ -7,9 +7,13 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
   	<a-marker preset="hiro">
-              <a-box color="tomato" depth="1" height="1" width="1" 
-                animation="property:position; dur: 3000; to: 5 0 0; loop: true" >
-              </a-box>
+             < a-entity gltf-model="url('https://raw.githubusercontent.com/ajitem111/rorornoa/master/scene.gltf')">
+               <a-animation attribute="material.opacity" dur:500 from="0.20" to="1" direction="alternate" repeat="indefinite">
+                 </a-animation>
+      
+      </a-entity>
+                
+              
   	</a-marker>
   	<a-entity camera></a-entity>
     </a-scene>
