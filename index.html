@@ -6,9 +6,7 @@
   <a-scene embedded arjs='sourceType: webcam;'>
  
     <a-marker preset='hiro'>
-      <!--Adding a glTF 2.0 model to your scene-->
-      <a-box position="0 0 0" color:"red"></a-box>
-      
+      <a-entity gltf-model="url('/model/scene.gltf')"></a-entity>
     </a-marker>
 
     <a-entity camera></a-entity>
